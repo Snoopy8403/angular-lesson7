@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-private-details',
@@ -8,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './private-details.component.scss'
 })
 export class PrivateDetailsComponent {
+
+  @Input() id?: string;
 
 }
